@@ -48,8 +48,8 @@ Address: <% out.println(rs.getString(8)); %> <br>
 Contact: <% out.println(rs.getString(9)); %> <br>
 Email: <% out.println(rs.getString(1)); %> <br>
 Category: <% out.println(rs.getString(10)); %> <br>
-Paid in: <% out.println(rs.getString(11)); %>
-Mode of Payment: <% out.println(12); %>
+Paid in: <% out.println(rs.getString(11)); %> <br>
+Mode of Payment: <% out.println(rs.getString(12)); %> <br>
 Hotel: <% out.println(rs.getString(13)); %> <br>
 </div>
 </body>
