@@ -37,6 +37,7 @@ if(rs.next()) {
 
 <div id="user-info">
 <% out.println("Welcome " +rs.getString("fname")); %>
+<a href="Login.html" style="position:fixed; right:10px; top:5px;">Logout</a>
 <h1>Registration Profile</h1>
 First Name: <% out.println(rs.getString(3)); %> <br>
 Last Name: <% out.println(rs.getString(4)); %> <br>
