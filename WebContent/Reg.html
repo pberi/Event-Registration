@@ -5,27 +5,19 @@
 <title>Register yourself</title>
 </head>
 <body>
+	<h1>IOTon International Seminar 2016</h1>
+	<h2>Register Now!</h2>
 
-	 <!--  <form action="reg.jsp" method="post">
-	
-		<p>Email :<input type="text" name="email" /></p>
-		<p>First name :<input type="text" name="fname" /></p>
-		<p>Last name :<input type="text" name="lname" /></p>
-		<p>User name :<input type="text" name="userid" /></p>
-		<p>password :<input type="password" name="pwd" /></p>
-		<input type="submit" /> -->
-	
-	</form> 
 	
 	<form action="reg.jsp" method=post>
-		Username: <input type="text" name="userid" id="userid"><div id="status"></div> <br>
-		Password: <input type="password" name="password"> <br>
+		Enter your email ID: <input placeholder="example@example.com" type="email" name="email"><br>
+		Set a password: <input type="password" name="password"> <br>
 		Name: <input placeholder="First" type="text" name="fname"> <input placeholder="Last" type="text" name="lname"><br>
-		Age: <input type="number" name="age"><br>
+		Age: <input type="number" name="age" value="0"><br>
 		
-		Gender: <input type="radio" name="gender" value="male" checked="checked">Male
-				<input type="radio" name="gender" value="female">Female
-				<input type="radio" name="gender" value="other">Other<br>
+		Gender: <input type="radio" name="gender" value="Male" checked="checked">Male
+				<input type="radio" name="gender" value="Female">Female
+				<input type="radio" name="gender" value="Other">Other<br>
 		
 		Country:
 		<select name="country">
@@ -281,7 +273,6 @@
 		
 		Address: <input type="text" name="address"><br>
 		Contact: <input type="tel" name="contact"><br>
-		Email: <input placeholder="example@example.com" type="email" name="email"><br>
 		
 		Category:
 		<select name="category">
@@ -292,10 +283,10 @@
 		<option value="Company">Company Representative</option>
 		</select><br>
 		
-		Pay In:<input type="radio" name="payment" value="Rupee" checked="checked">Rupees</input>
-			   <input type="radio" name="payment" value="Dollar">Dollars</input>
-			   <input type="radio" name="payment" value="Pound">Pounds</input>
-			   <input type="radio" name="payment" value="Euro">Euros</input><br>
+		Pay In:<input type="radio" name="currency" value="Rupees" checked="checked">Rupees</input>
+			   <input type="radio" name="currency" value="Dollars">Dollars</input>
+			   <input type="radio" name="currency" value="Pounds">Pounds</input>
+			   <input type="radio" name="currency" value="Euros">Euros</input><br>
 		
 		Amount to be paid: Rs. 5000<br>
 		
@@ -306,7 +297,7 @@
 		Hotels:
 		<select name="hotels">
 		<option value="">Select Hotel</option>
-		<option value="J W Mariott">J W Mariott</option>
+		<option value="J. W. Mariott">J. W. Mariott</option>
 		<option value="Le Meridien">Le Meridien</option>
 		<option value="Ibis">Ibis</option>
 		<option value="Westin">Westin</option>
