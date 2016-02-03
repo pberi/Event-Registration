@@ -283,16 +283,37 @@
 		<option value="Company">Company Representative</option>
 		</select><br>
 		
-		Pay In:<input type="radio" name="currency" value="Rupees" checked="checked">Rupees</input>
-			   <input type="radio" name="currency" value="Dollars">Dollars</input>
-			   <input type="radio" name="currency" value="Pounds">Pounds</input>
-			   <input type="radio" name="currency" value="Euros">Euros</input><br>
+		Pay In:<input type="radio" id="rs" name="currency" value="Rupees" checked="checked" onclick="modifyText('rs')">Rupees</input>
+			   <input type="radio" id="do" name="currency" value="Dollars" onclick="modifyText('do')">Dollars</input>
+			   <input type="radio" id="po" name="currency" value="Pounds" onclick="modifyText('po')">Pounds</input>
+			   <input type="radio" id="eu" name="currency" value="Euros" onclick="modifyText('eu')">Euros</input><br>
 		
-		Amount to be paid: Rs. 5000<br>
+		<p>Amount to be paid: <label id="amount"> Rs. 5000</label></p><br>
+		
+		<script type="text/javascript">
+			function modifyText(currency) {
+				var displayAmount=document.getElementById('amount');
+				var currValue=document.getElementById(currency);
+				if (currValue.id=="rs") {
+					document.getElementById("amount").innerHTML = "₹5000";
+				}
+				if (currValue.id=="do") {
+					document.getElementById("amount").innerHTML = "75$";
+				}
+				if (currValue.id=="po") {
+					document.getElementById("amount").innerHTML = "55£";
+				}
+				if (currValue.id=="eu") {
+					document.getElementById("amount").innerHTML = "60€";
+				}
+			}
+		</script>
+		
 		
 		Payment Mode:<input type="radio" name="mode" value="Credit Card" checked="checked">Credit Card</input>
 			   <input type="radio" name="mode" value="Debit Card">Debit Card</input>
 			   <input type="radio" name="mode" value="Demand Draft">Demand Draft</input><br>
+			   
 			   
 		Hotels:
 		<select name="hotels">
